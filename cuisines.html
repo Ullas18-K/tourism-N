@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netherlands -Cuisines</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+        body {
+            transition: background-image 0.5s ease;
+        }
+        
+        .cuisines {
+            padding: 40px 0;
+        }
+
+        .cuisine-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cuisine-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1000px;
+            height: 350px;
+            margin: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cuisine-card img {
+            width: 40%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .cuisine-card div {
+            width: 55%;
+        }
+
+        .cuisine-card h3 {
+            color: #ddc4c4;
+            cursor: pointer;
+            margin: 0;
+            transition: color 0.3s;
+        }
+
+        .cuisine-card p {
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        .cuisine-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cuisine-card:hover p {
+            display: block;
+        }
+
+         .find-link {
+            display: inline-block;
+            position: absolute;
+            bottom: 15px;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            background-color: #c6d37c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        
+
+        .find-link {
+            background-color: #fc036b;
+            margin-left: 175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 45px;
+            font-size: 16px;
+            font: bold;
+            border-radius: 30px;
+        }
+
+        .find-link:hover {
+            background-color: white;
+            color: #fc036b;
+        }
+
+        .cuisine-card:hover  .cuisine-card:hover .find-link {
+            display: inline-block;
+        }
+
+        .font-color{
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .cuisine-card h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .cuisine-card img {
+                width: 400px;
+                height: 240px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+        @media (max-width: 768px) {
+            .cuisine-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cuisine-card img {
+                width: 200px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .cuisine-card div {
+                width: 100%;
+            }
+
+            .find-link {
+                bottom: 10px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar glass" style="height: 70px">
+        <span><a href="index.html" style="display: flex; align-items: center">
+            <img src="./img/mountain.png" width="40" style="margin: -25px -10px -25px -20px" />
+            <h1 class="logo">&nbsp;NETHERLANDS -CUISINES</h1></a>
+        </span>
+        <ul class="nav-links">
+            <li><a href="index.html" class="cir_border">Home</a></li>
+            <li><a href="explore.html" class="cir_border">Explore</a></li>
+            <li><a href="events.html" class="cir_border">Events</a></li>
+            <li><a href="cuisines.html" class="active cir_border">Cuisines</a></li>
+            <li><a href="about.html" class="cir_border">About</a></li>
+            <li><a href="accomodation.html" class="cir_border">Accomodations</a></li>
+            <li><a href="contact.html" class="cir_border">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="cuisines">
+        <div class="container">
+            <h1 class="font-color">Traditional Dutch Cuisines</h1>
+            <div class="line"></div>
+
+            <div class="cuisine-list">
+
+                <!-- Dish 1 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.INk7SlhGPjC2l7HtsK64vwHaFj?rs=1&pid=ImgDetMain" alt="Stroopwafel" />
+                    <div>
+                        <h3>Stroopwafel</h3>
+                        <div class="line"></div>
+                        <p>Stroopwafel is a beloved Dutch treat made of two thin waffle layers with a caramel syrup filling in the middle. It’s a delightful combination of sweet and chewy textures, perfect with a hot drink like coffee or tea.</p>
+                        <button class="find-link" onclick="alert('Stroopwafel is most popularly found in Amsterdam and other major Dutch cities.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.P7jErbD5ZUSayHXr7GlE4gHaE8?pid=ImgDet&w=474&h=316&rs=1" alt="Poffertjes" />
+                    <div>
+                        <h3>Poffertjes</h3>
+                        <div class="line"></div>
+                        <p>Poffertjes are tiny, fluffy pancakes typically served with butter and powdered sugar. These mini delights are popular at festivals and markets, often enjoyed as a sweet snack during the colder months.</p>
+                       <button class="find-link" onclick="alert('Poffertjes can be found in festivals and markets across the Netherlands, especially in the winter.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="cuisine-card">
+                    <img src="https://bing.com/th?id=OSK.0ab7bd9712975baac85d274a964c7e13" alt="Erwtensoep" />
+                    <div>
+                        <h3>Erwtensoep</h3>
+                        <div class="line"></div>
+                        <p>Erwtensoep, or Dutch pea soup, is a thick, hearty dish made from split peas, pork, and vegetables. It’s a traditional winter comfort food, often served with rye bread and sausage, making it a fulfilling meal.</p>
+                        <button class="find-link" onclick="alert('Erwtensoep is a popular dish during the winter months, especially in the northern Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 4 -->
+                <div class="cuisine-card">
+                    <img src="https://www.thespruceeats.com/thmb/OAjRpN5zNZaqPukPn4dHO6ggRlg=/5770x3852/filters:fill(auto,1)/beef-bitterballen-recipe-1129015-hero-01-d0613708068e4ca78b1034a55cb27362.jpg" />
+                    <div>
+                        <h3>Bitterballen</h3>
+                        <div class="line"></div>
+                        <p>Bitterballen are deep-fried meatballs, filled with a rich ragout, often served as a snack with mustard at Dutch pubs. They’re crunchy on the outside, creamy on the inside, and perfect for sharing with friends.</p>
+                         <button class="find-link" onclick="alert('Bitterballen can be found in most Dutch pubs, especially in Amsterdam and Rotterdam.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 5 -->
+                <div class="cuisine-card">
+                    <img src="https://c8.alamy.com/comp/CPXY4P/a-traditional-dutch-delicacy-of-raw-herring-with-chopped-onions-and-CPXY4P.jpg" alt="Haring" />
+                    <div>
+                        <h3>Haring</h3>
+                        <div class="line"></div>
+                        <p>Haring, or raw herring fish, is often served with onions and pickles, and eaten by holding the fish by the tail. It's a quintessential Dutch street food, typically enjoyed as a quick snack.</p>
+                       <button class="find-link" onclick="alert('Haring can be found in fish stalls throughout the Netherlands, especially during the summer.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 6 -->
+                <div class="cuisine-card">
+                    <img src="https://cdn.tasteatlas.com/Images/Dishes/d955e9422d754821bb4d45b8fa4e637d.jpg" alt="Kroket" />
+                    <div>
+                        <h3>Kroket</h3>
+                        <div class="line"></div>
+                        <p>Kroket is a deep-fried, breadcrumb-coated roll filled with beef or veal ragout. It’s often eaten as a quick snack on the go or served as part of a meal, especially in sandwiches.</p>
+                         <button class="find-link" onclick="alert('Kroket can be found in most snack bars and fast food stands in the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 7 -->
+                <div class="cuisine-card">
+                    <img src="https://smaakmenutie.nl/wp-content/uploads/2021/10/Boerenkool-stamppot-met-spekjes-2-1024x691.jpg" alt="Boerenkoolstamppot" />
+                    <div>
+                        <h3>Boerenkoolstamppot</h3>
+                        <div class="line"></div>
+                        <p>Boerenkoolstamppot is a traditional Dutch dish made from mashed potatoes mixed with kale, often served with smoked sausage or bacon. It's a hearty and comforting winter meal.</p>
+                        <button class="find-link" onclick="alert('Boerenkoolstamppot is commonly served in Dutch homes during winter.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 8 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.nDh2MclIgZ0KciL7hSGl-QHaE8?w=252&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Patat" />
+                    <div>
+                        <h3>Patat</h3>
+                        <div class="line"></div>
+                        <p>Patat, or Dutch fries, are thicker than regular French fries and are often served with a variety of toppings, such as mayonnaise, peanut sauce, or satay. They're a beloved street food in the Netherlands.</p>
+                        <button class="find-link" onclick="alert('Patat is available at most frituur (fries shops) and snack bars across the country.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 9 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.QJ5F-2h_Krz0hmvo1wRUugHaE8?w=247&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Kibbeling" />
+                    <div>
+                        <h3>Kibbeling</h3>
+                        <div class="line"></div>
+                        <p>Kibbeling is battered and deep-fried fish, typically cod, served with garlic sauce. It's a popular snack at Dutch fish markets and a must-try for seafood lovers.</p>
+                         <button class="find-link" onclick="alert('Kibbeling is available at fish stands and seafood restaurants throughout the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 10 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.bQDwmHixEwdKhEhjXW76sAHaFI?w=270&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Hutspot" />
+                    <div>
+                        <h3>Hutspot</h3>
+                        <div class="line"></div>
+                        <p>Hutspot is a Dutch dish made from mashed potatoes, carrots, and onions. It's traditionally served with a sausage and is a popular winter meal in many Dutch households.</p>
+                        <button class="find-link" onclick="alert('Hutspot can be found in homes and restaurants across the Netherlands, especially in the winter months.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 11 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.hIYIFOGiSkFiE4mwXq594gAAAA?rs=1&pid=ImgDetMain" alt="Sate" />
+                    <div>
+                        <h3>Sate</h3>
+                        <div class="line"></div>
+                        <p>Sate is Indonesian-inspired skewered grilled meat served with a rich peanut sauce. It’s popular in the Netherlands, often served as a snack or appetizer.</p>
+                         <button class="find-link" onclick="alert('Sate can be found at many Indonesian restaurants throughout the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 13 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.90V0Ug-EuNUmYeYTEmPdlgHaE8?rs=1&pid=ImgDetMain" alt="Rijsttafel" />
+                    <div>
+                        <h3>Rijsttafel</h3>
+                        <div class="line"></div>
+                        <p>Rijsttafel, or "rice table," is an Indonesian-inspired Dutch dish that consists of a variety of small dishes, often served with rice. It’s a flavorful and diverse meal, perfect for sharing with friends.</p>
+                         <button class="find-link" onclick="alert('Rijsttafel is commonly served in Indonesian restaurants across the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 14 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.W3ZdKSPvGX8racdexLLeLAHaE8?rs=1&pid=ImgDetMain" alt="Bami Goreng" />
+                    <div>
+                        <h3>Bami Goreng</h3>
+                        <div class="line"></div>
+                        <p>Bami Goreng is a Dutch-Indonesian fried noodle dish with vegetables, chicken, or shrimp. It’s a quick and flavorful meal that can be found in many Dutch households and restaurants.</p>
+                       <button class="find-link" onclick="alert('Bami Goreng is widely available in Dutch-Indonesian restaurants throughout the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+                <!-- Dish 15 -->
+                <div class="cuisine-card">
+                    <img src="https://th.bing.com/th/id/OIP.i507GMxQM0Lf5W7GilCQ9AHaFj?rs=1&pid=ImgDetMain" alt="Indonesian Satay" />
+                    <div>
+                        <h3>Indonesian Satay</h3>
+                        <div class="line"></div>
+                        <p>Indonesian Satay is a popular dish in the Netherlands, consisting of skewered and grilled meat served with a peanut sauce. It's commonly found in Dutch-Indonesian restaurants, a testament to the country's colonial past.</p>
+                        <button class="find-link" onclick="alert('Indonesian Satay is served in many Indonesian restaurants in the Netherlands.')">Find</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <br>
+        <br>
+        <span>Created By V Lobby Ltd | &#169; 2024 All rights reserved.</span>
+        <div class="social">
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

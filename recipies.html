@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutch Recipes - Culinary Adventure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Add custom styling here */
+        .recipe-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .recipe-card {
+            background-color:#9ec9ce
+            ; /* Light gray background for each recipe card */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 250px;
+        }
+        .recipe-card img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .recipe-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+        .recipe-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .recipe-card .btn {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ff7f50;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .recipe-card .btn:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass" style="height: 70px;">
+        <span>
+            <a href="index.html" style="display: flex; align-items: center;">
+                <img src="./img/food-icon.png" width="40" />
+                <h1 class="logo">CULINARY ADVENTURE</h1>
+            </a>
+        </span>
+        <ul class="nav-links">
+            <li><a href="index.html" class="cir_border">Home</a></li>
+            <li><a href="events.html" class="cir_border">Events</a></li>
+            <li><a href="explore.html" class="cir_border">Explore</a></li>
+            <li><a href="cuisines.html" class="cir_border">Cuisines</a></li>
+            <li><a href="about.html" class="cir_border">About</a></li>
+            <li><a href="recipes.html" class="active cir_border">Recipes</a></li>
+            <li><a href="accomodation.html" class="cir_border">Accomodations</a></li>
+            <li><a href="contact.html" class="cir_border">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recipes Section -->
+    <section class="recipes">
+        <div class="container">
+            <h1 class="font-color">Popular Dutch Recipes</h1>
+            <div class="line"></div>
+
+            <!-- Recipe List -->
+            <div class="recipe-list">
+                <!-- Recipe 1 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.INk7SlhGPjC2l7HtsK64vwHaFj?rs=1&pid=ImgDetMain" alt="Stroopwafel">
+                    <h3>Stroopwafel</h3>
+                    <p>A delicious Dutch treat made of two thin waffles with caramel syrup filling. Perfect for enjoying with coffee or tea.</p>
+                    <a href="https://www.bing.com/ck/a?!&&p=ca359e5b36293a245a15b2e817e9c0f36c91cc98374c60e24e55d8d7a7b3cb16JmltdHM9MTczMDkzNzYwMA&ptn=3&ver=2&hsh=4&fclid=0490d9cf-42aa-6834-0d9e-cdb4430c6926&u=a1L3ZpZGVvcy9zZWFyY2g_dmlldz1kZXRhaWwmcT1TdHJvb3B3YWZlbCttYWtpbmcrcmVjaXBlJm1pZD1BQkI5NDhEN0JERjFDQjg5NkNCRUFCQjk0OEQ3QkRGMUNCODk2Q0JFJm1jaWQ9OEJGOEM2QjdFNTlFNEE0OThBMURGQzREMzU2NzA1OUEmRk9STT1WSVJF&ntb=1" target="_blank" class="btn">View Recipe</a>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="recipe-card">
+                    <img src="https://th.bing.com/th/id/OIP.P7jErbD5ZUSayHXr7GlE4gHaE8?pid=ImgDet&w=474&h=316&rs=1" alt="Poffertjes">
+                    <h3>Poffertjes</h3>
+                    <p>Fluffy, mini Dutch pancakes served with powdered sugar and butter, popular at fairs and festivals in the Netherlands.</p>
+                    <a href="https://www.bing.com/ck/a?!&&p=af7509f8ea9e18febc2b07a0e1f48f50a9c09dc53158b3353179723cc80f3f07JmltdHM9MTczMDkzNzYwMA&ptn=3&ver=2&hsh=4&fclid=0490d9cf-42aa-6834-0d9e-cdb4430c6926&u=a1L3ZpZGVvcy9zZWFyY2g_dmlldz1kZXRhaWwmcT1Qb2ZmZXJ0amUrbWFraW5nK3JlY2lwZSZtaWQ9MTEzODk1MzhFQzJGQUFFMEYyNDIxMTM4OTUzOEVDMkZBQUUwRjI0MiZtY2lkPTZENkE3MDlFRTIxRDQ4Q0Y4MDYzMTc1MUJFNzdEMTg0JkZPUk09VklSRQ&ntb=1" target="_blank" class="btn">View Recipe</a>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="recipe-card">
+                    <img src="https://bing.com/th?id=OSK.0ab7bd9712975baac85d274a964c7e13" alt="Erwtensoep">
+                    <h3>Erwtensoep (Dutch Pea Soup)</h3>
+                    <p>A hearty winter soup made with split peas, pork, and vegetables. A classic comfort dish in Dutch cuisine.</p>
+                    <a href="https://www.bing.com/ck/a?!&&p=406189265b3df808eb714b1e5093573956a18bffb165d4c55ff36faa6ed5d277JmltdHM9MTczMDkzNzYwMA&ptn=3&ver=2&hsh=4&fclid=0490d9cf-42aa-6834-0d9e-cdb4430c6926&u=a1L3ZpZGVvcy9zZWFyY2g_dmlldz1kZXRhaWwmcT1Fcnd0ZW5zb2VwK21ha2luZytyZWNpcGUmbWlkPTUzREJCRjQ2NjY0REZDRDVGODM3NTNEQkJGNDY2NjRERkNENUY4MzcmbWNpZD02QzgyQzhGRUYxOEQ0NEI3OTc5RjEwNDJGNEQ0M0YwOCZGT1JNPVZJUkU&ntb=1" target="_blank" class="btn">View Recipe</a>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="recipe-card">
+                    <img src="https://bing.com/th?id=OSK.ecaf98dc46fc4b62a5bfb358e68e4541" alt="Bitterballen">
+                    <h3>Bitterballen</h3>
+                    <p>Crispy Dutch meatballs typically served as a snack with mustard. They’re popular in Dutch bars and at gatherings.</p>
+                    <a href="https://www.bing.com/ck/a?!&&p=ad68d9ac09bec42c89bc080b8bfa60c2bc7de989a12309b3ab1fc5dadb3e628bJmltdHM9MTczMDkzNzYwMA&ptn=3&ver=2&hsh=4&fclid=0490d9cf-42aa-6834-0d9e-cdb4430c6926&u=a1L3ZpZGVvcy9zZWFyY2g_dmlldz1kZXRhaWwmcT1CaXR0ZXJiYWxsZW4rbWFraW5nK3JlY2lwZSZtaWQ9QkY5NTAyNUYwNzNCM0JDMUZBQzBCRjk1MDI1RjA3M0IzQkMxRkFDMCZtY2lkPUI2OTM1MUY1MzRCOTQzQTk4NTJFN0ZCMDQyQjRENzVFJkZPUk09VklSRQ&ntb=1" target="_blank" class="btn">View Recipe</a>
+                </div>
+
+                
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+
+    <script src="js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

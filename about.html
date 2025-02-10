@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - NETHERLANDS</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+        /* About Section Styles */
+#about {
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.font-color {
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 2.3em;
+    color: white;
+    font-weight: 600;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
+    text-align: center; /* Center-align text */
+    gap: 20px;
+}
+
+.text-image .text h2 {
+    font-size: 3.9em;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-left: 37px;
+}
+
+.text-image .text p {
+    font-size: 1.7em;
+    color: white;
+    line-height: 1.6;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center-align text block */
+}
+
+.text-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .text-image {
+        flex-direction: row; /* Arrange text and image side-by-side */
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .text-image .text {
+        flex: 1;
+        text-align: left; /* Align text to the left on larger screens */
+    }
+
+    .text-image img {
+        flex: 1;
+        max-width: 45%; /* Adjust image size for balance */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar glass" style="height: 70px">
+        <span>
+            <a href="index.html" style="display: flex; align-items: center">
+                <img class="img2" src="./img/mountain.png" width="40" />
+                <h1 class="logo">&nbsp;NETHERLANDS -ABOUT US</h1>
+            </a>
+        </span>
+        <ul class="nav-links">
+            <li><a href="index.html" class="cir_border">Home</a></li>
+            <li><a href="explore.html" class="cir_border">Explore</a></li>
+            <li><a href="events.html" class="cir_border">Events</a></li>
+            <li><a href="cuisines.html" class="cir_border">Cuisine</a></li>
+            <li><a href="about.html" class="active cir_border">About</a></li>
+            <li><a href="accomodation.html" class="cir_border">Accomodations</a></li>
+            <li><a href="contact.html" class="cir_border">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+    <div class="title">
+        <h1 class="font-color" style="color: white;">About Us</h1>
+        <div class="line"></div>
+    </div>
+
+    <div id="about_us">
+        <!-- Content Section -->
+        <div class="content">
+            <div class="text-image">
+                <div class="text">
+                    <h2>Who We Are</h2>
+                    <div class="line" style="margin-left:40px"></div>
+                    <p>V Lobby Ltd is a premier travel platform dedicated to helping travelers discover the beauty of the Netherlands. With a passion for curating exceptional experiences, we connect you to the country’s breathtaking landscapes, vibrant festivals, iconic attractions, and rich culture. Our mission is to make travel effortless, inspiring, and unforgettable.</p>
+                </div>
+                <img src="img/company-intro.jpeg" alt="V Lobby Ltd Team">
+            </div>
+
+            <div class="text-image">
+                <div class="text">
+                    <h2>Our Mission </h2>
+                    <div class="line" style="margin-left:40px"></div>
+                    <p>Our mission is to bring the Netherlands closer to travelers worldwide by providing insightful, reliable, and engaging travel resources. We envision a world where everyone can explore with ease, immerse in new cultures, and create lasting memories. At V Lobby Ltd, we believe travel is not just a journey but a way to connect with the world.</p>
+                </div>
+                <img src="img/mission_vision.jpeg" alt="Our Mission and Vision">
+            </div>
+
+            <div class="text-image">
+                <div class="text">
+                    <h2>What We Offer</h2>
+                    <div class="line" style="margin-left:40px"></div>
+                    <p>From customized travel guides and detailed itineraries to local insights and hidden gems, V Lobby Ltd is your trusted partner for exploring the Netherlands. Whether you’re planning a city break, a countryside retreat, or a cultural adventure, our platform provides everything you need, including event listings, accommodation suggestions, and culinary recommendations.</p>
+                </div>
+                <img src="img/services.jpeg" alt="Travel Services">
+            </div>
+
+            <div class="text-image">
+                <div class="text">
+                    <h2>Why Choose Us?</h2>
+                    <div class="line" style="margin-left:40px"></div>
+                    <p>At V Lobby Ltd, we combine expertise with a personal touch to ensure your travel experience exceeds expectations. With our in-depth knowledge of the Netherlands, user-friendly platform, and commitment to excellence, we make planning your trip a breeze. Discover the Netherlands like never before, with recommendations tailored just for you.</p>
+                </div>
+                <img src="img/why_choose_us.jpeg" alt="Why Choose V Lobby Ltd">
+            </div>
+        </div>
+    </div>
+</section>
+    <footer style="background-color: #333; padding: 20px; color: #fff; text-align: center;">
+        <br>
+        <br>
+        <span style="color: #fff; margin: 0 15px; text-decoration: none;">Created By V Lobby Ltd | &#169; 2024 All rights reserved.</span>
+        <div class="social">
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+    </footer>
+    <!-- About Section -->
+
+    <script src="js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
